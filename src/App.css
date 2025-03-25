@@ -1,0 +1,20 @@
+@keyframes moveImage {
+  from {
+    transform: translateX(-100%) translateY(50px); /* Start from the left */
+  }
+  to {
+    transform: translateX(0) translateY(0); /* End at its original position */
+  }
+}
+
+.image-animate {
+  animation: moveImage 1s ease-out forwards;
+}
+
+  
+  .animated-bg {
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: movingBg 8s ease infinite;
+  }
+  
