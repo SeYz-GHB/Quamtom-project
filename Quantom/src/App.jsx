@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header'
 import AutoCarousel from './components/AutoCarousel'
 import AncientGreceD3D from './assets/HeaderImage/3Dburst.png'
+import Login from './pages/LoginPage'
 function App() {
   return (
     <div className="relative flex flex-col md:items-center bg-gray-800 min-h-screen">
