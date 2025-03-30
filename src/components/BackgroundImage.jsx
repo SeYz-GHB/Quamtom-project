@@ -33,7 +33,7 @@ const BackgroundImage = () => {
       ref={imageRef}
       src={AncientGreceD3D}
       alt="Left Background"
-      className={`absolute left-0 md:w-[800px] md:h-[400px] transform -translate-x-30 translate-y-50 lg:inline-block 
+      className={`absolute left-0 md:w-[800px] md:h-[400px] transform -translate-x-30 translate-y-50 xl:inline-block 
         md:-translate-x-70  z-10 hidden
         ${isVisible ? 'image-animate' : 'hidden'} `}
     />

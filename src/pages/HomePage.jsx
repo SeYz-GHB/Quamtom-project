@@ -1,14 +1,11 @@
-import { Routes, Route,Link} from "react-router-dom";
 
-import Header from '../components/Header'
-import AutoCarousel from '../components/AutoCarousel'
-import BackgroundImage from "../components/BackgroundImage";
-import MenuIcon from "../components/MenuIcon"
-import Login from './LoginPage'
-import quanTomImage from '../assets/HeaderImage/Quantom.png'
-import CardsRow1 from "../components/CardRow1/CardsRow1";
-import PartnerProduct from "../components/PartnerProduct";
-import Cards from '../components/CardsSection/Cards'
+import AutoCarousel from '../components/HomepageComponent/HomeAutoCarousel'
+
+import MenuIcon from "../components/HomepageComponent/MenuIcon"
+import CardsRow1 from "../components/HomepageComponent/CardRow1/CardsRow1";
+import HomepageCard from "../components/HomepageComponent/HomepageCard";
+import {data} from '../data/LuxaryProuducts'// Assuming you have data in this file
+import BackgroundImage from '../components/BackgroundImage';
 const HomePage = () => {
     return (
         <>
@@ -16,13 +13,13 @@ const HomePage = () => {
       
       <div className="flex flex-col  items-center w-full ">
 
-        <Header />
         <AutoCarousel/>
+        <BackgroundImage />
         <MenuIcon/>
-        <CardsRow1/>
-        <Cards/>
+        <CardsRow1 data={data}/>
+        <HomepageCard/>
         <div className="bg-black w-full">
-        <PartnerProduct/>
+ 
         </div>
       
         

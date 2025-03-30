@@ -2,12 +2,18 @@ import React from 'react';
 
 const Card = ({id, name,materials,img}) => {
   return (
-    <div className="   shadow-lg w-[180px] md:w-[250px] flex flex-col items-center justify-center p-2 h-[12rem] md:h-[15rem] bg-gray-400 ">
-        <img src={img} alt="" className='w-[50%] '/>
-        
-            <p className="font-bold ">{name}</p>
+    <div className="  w-full flex flex-row md:flex-col items-center justify-center h-full ">
+        <img src={img} alt="" className='w-[60%] h-[70%] md:w-[50%] md:h-[50%] '/>
+        <div className='flex flex-col items-center'>
+        <p className="font-bold line-clamp-2">{name}</p>
+
+
             <p className="font-semibold">Materials:</p>
             <p className="text-gray-400 ">{materials.join(", ")}</p>
+       
+            
+        </div>
+        
             
       
     </div>
