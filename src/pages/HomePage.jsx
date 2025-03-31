@@ -17,7 +17,7 @@ const HomePage = () => {
         <BackgroundImage />
         <MenuIcon/>
         <CardsRow1 data={data}/>
-        <HomepageCard/>
+        <HomepageCard />
         <div className="bg-black w-full">
  
         </div>
