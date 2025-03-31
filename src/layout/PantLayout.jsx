@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 const PantsLayout = () => {
   return (
     <div>
-      PantsLayout page
+      
       <Outlet />
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import EachCardRow1 from './EachCardRow1';
 
-const CardsRow1 = ({ data }) => {
+const CardsRow1 = ({ data, productType }) => {
   const navigate = useNavigate();
 
   return (
@@ -11,7 +11,7 @@ const CardsRow1 = ({ data }) => {
         <div 
           key={eachData.id} 
           className="flex flex-col items-center flex-shrink-0 cursor-pointer"
-          onClick={() => navigate(`/hoodies/${eachData.id}`)} // Navigation added here
+          onClick={() => navigate(`/${productType}/${eachData.id}`)} // Dynamic path
         >
           <EachCardRow1
             img={eachData.img}
