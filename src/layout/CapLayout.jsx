@@ -3,7 +3,6 @@ import {Outlet} from 'react-router-dom'
 const CapLayout = () => {
   return (
     <div>
-      cappage
       <Outlet />
     </div>
   )

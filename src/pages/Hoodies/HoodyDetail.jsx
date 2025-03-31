@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { data } from "../../data/datas";
 import CardsRow1 from "../../components/HomepageComponent/CardRow1/CardsRow1";
 import PaymentPopup from "../../components/PaymentComponent";
-PaymentPopup
+
 
 const HoodyDetail = () => {
   const { id } = useParams();
@@ -13,9 +13,7 @@ const HoodyDetail = () => {
   const [count, setCount] = useState(1); // Set default quantity to 1
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
 
-  if (!hoodie) {
-    return <div className="text-center text-2xl">OT TUAN BAN TVER ALL TE ☠️</div>;
-  }
+  
 
   const handleColorChange = (color) => {
     setSelectedColor(color);
