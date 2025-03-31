@@ -124,7 +124,7 @@ const ProductDetail = ({ data, productType, onBuyClick }) => {
               className="border-2 border-black text-black px-6 py-3 shadow-md hover:bg-black hover:text-white transition duration-300 cursor-pointer"
               onClick={handleAddToCart}
             >
-              Add to Cart
+              Buy
             </button>
             <button
               className="border-2 border-black px-6 py-3 shadow-md hover:bg-black hover:text-white transition duration-300"
