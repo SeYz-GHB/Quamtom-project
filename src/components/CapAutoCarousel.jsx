@@ -5,7 +5,7 @@ import cap3 from '../assets/AutoCarousel/cap3.jpg';
 
 
 const AutoCarousel = () => {
-  const images = [cap1,cap2,cap3];
+  const images = [cap1,cap2,cap3,cap1,cap2,cap3];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

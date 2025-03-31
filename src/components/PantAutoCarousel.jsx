@@ -5,7 +5,7 @@ import pant3 from '../assets/AutoCarousel/pant3.jpg';
 
 
 const AutoCarousel = () => {
-  const images = [pant1, pant2, pant3];
+  const images = [pant1, pant2, pant3,pant1, pant2, pant3];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

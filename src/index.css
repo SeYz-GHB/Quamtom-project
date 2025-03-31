@@ -13,6 +13,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.image-animate {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); /* Starts from the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Moves to its original position */
+  }
+}
 p {
   @apply text-[13px] md:text-[15px] lg:text-[18px];
 }
@@ -69,3 +84,5 @@ h2 {
                 0 0 35px rgba(255, 255, 255, 0.8);
   }
 }
+
+

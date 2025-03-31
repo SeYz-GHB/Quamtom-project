@@ -5,7 +5,7 @@ import bag3 from '../assets/AutoCarousel/bag3.jpg';
 
 
 const AutoCarousel = () => {
-  const images = [bag1,bag2,bag3];
+  const images = [bag1,bag2,bag3,bag1,bag2,bag3];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

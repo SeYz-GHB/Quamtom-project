@@ -96,7 +96,7 @@ const Header = () => {
   }, [isSearchOpen]);
 
   return (
-    <header className="flex flex-row justify-between items-center px-5 py-3 h-12 w-full md:w-[90%] sticky top-0 bg-white z-50">
+    <header className="flex flex-row justify-between items-center px-5 py-3 h-12 w-full md:w-[90%]  bg-white z-50">
       <div className="flex flex-row gap-10 items-center">
         <Link to="/">
           <img src={Quantom} alt="Logo" className="w-[30px] scale-x-[-1] cursor-pointer" />

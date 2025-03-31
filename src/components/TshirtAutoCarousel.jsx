@@ -4,7 +4,7 @@ import tshirt2 from '../assets/AutoCarousel/tshirt2.jpg';
 import tshirt3 from '../assets/AutoCarousel/tshirt3.jpg';
 
 const AutoCarousel = () => {
-  const images = [tshirt1,tshirt2,tshirt3];
+  const images = [tshirt1,tshirt2,tshirt3,tshirt1,tshirt2,tshirt3];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
