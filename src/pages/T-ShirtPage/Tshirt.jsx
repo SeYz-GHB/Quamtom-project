@@ -4,18 +4,19 @@ import Cards from '../../components/CardsSection/Cards'
 
 
 import RunningText from '../../components/RunningText'
-import PremiumsHoodies from '../../components/HoodiesComponent/PremiumsHoodies'
+import AutoCarousel from '../../components/TshirtAutoCarousel'
+
 
 const Tshirts = () => {
   return (<div>
     
     <div className='bg-gray-100 w-full flex flex-col items-center ' >
-      
+    <AutoCarousel />
       <RunningText />
       <div className='w-full flex flex-col items-center'>
 
         <Cards data={data} basePath="Tshirts"  />
-      <PremiumsHoodies />
+ 
       </div>
       
     </div>

@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react'; // Correct import (not react-router-dom)
-import Poster1 from '../../assets/AutoCarousel/Poster1.jpg';
-import Poster2 from '../../assets/AutoCarousel/Poster2.jpg';
-import Poster3 from '../../assets/AutoCarousel/Poster3.jpg';
+import React, { useState, useEffect } from 'react';
+import pant1 from '../assets/AutoCarousel/pant1.jpg';
+import pant2 from '../assets/AutoCarousel/pant2.jpg';  
+import pant3 from '../assets/AutoCarousel/pant3.jpg';
 
 
 const AutoCarousel = () => {
-  const images = [Poster1,Poster2,Poster3,Poster1,Poster2,Poster3];
+  const images = [pant1, pant2, pant3];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

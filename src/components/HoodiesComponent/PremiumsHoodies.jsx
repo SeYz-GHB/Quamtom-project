@@ -49,12 +49,12 @@ const PremiumsHoodies = () => {
             <div className="w-4/5 h-4/5 relative flex items-center justify-center">
             <button
                 onClick={prevImage}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 text-white p-3 rounded-full hover:bg-black/80 transition-colors z-10"
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 text-white p-3 rounded-full hover:bg-black/80 transition-colors z-10 cursor-pointer"
             >
                 &lt;
             </button>
 
-            <div className="relative w-full h-full flex items-center justify-center overflow-hidden p-10">
+            <div className="relative w-full h-full flex items-center justify-center overflow-hidden p-10 cursor-pointer">
                 <img
                 src={images[prevIndex]}
                 alt="Previous"
@@ -64,18 +64,18 @@ const PremiumsHoodies = () => {
                 ref={mainImgRef}
                 src={images[currentIndex]}
                 alt="Main"
-                className="w-1/2 z-10 opacity-100 scale-75 transition-all duration-1200 ease-[cubic-bezier(0.25,0.8,0.25,1)] object-cover"
+                className="w-1/2 z-10 opacity-100 scale-75 transition-all duration-1200 ease-[cubic-bezier(0.25,0.8,0.25,1)] object-cover cursor-pointer"
                 />
                 <img
                 src={images[nextIndex]}
                 alt="Next"
-                className="absolute right-[10%] w-1/4 opacity-30 scale-75 transition-all duration-1200 ease-[cubic-bezier(0.25,0.8,0.25,1)] object-cover"
+                className="absolute right-[10%] w-1/4 opacity-30 scale-75 transition-all duration-1200 ease-[cubic-bezier(0.25,0.8,0.25,1)] object-cover cursor-pointer"
                 />
             </div>
 
             <button
                 onClick={nextImage}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 text-white p-3 rounded-full hover:bg-black/80 transition-colors z-10"
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 text-white p-3 rounded-full hover:bg-black/80 transition-colors z-10 cursor-pointer"
             >
                 &gt;
             </button>

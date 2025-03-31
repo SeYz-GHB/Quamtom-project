@@ -21,6 +21,9 @@ import Footer from "./components/Footer";
 
 import NotFound from "./pages/NotFoundPage";
 import CapDetail from "./pages/Caps/CapDetail";
+import AboutUs from "./pages/AboutUs";
+import PartnerShip from "./pages/PartnerShip";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
@@ -54,6 +57,8 @@ const router = createBrowserRouter(
      
       
       <Route path="login" element={<Login />} />
+      <Route path="about-us"  element={<AboutUs/>}></Route>
+      <Route path="partnership"  element={<PartnerShip/>}></Route>
       <Route path="*" element={<NotFound/>} ></Route>
       
 
