@@ -1,25 +1,25 @@
 import { useState } from 'react';
-import { data } from '../../data/BagsData';
+import { data } from '../../data/CapsData';
 import CardsRow1 from '../../components/HomepageComponent/CardRow1/CardsRow1';
 import PaymentPopup from '../../components/PaymentComponent';
 import ProductDetail from '../../components/ProductDetail';
 
-const BagDetail = () => {
+const CapDetail = () => {
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState(null); // Renamed from 'cap' for clarity
   const [count, setCount] = useState(1);
 
   const handleBuyClick = (product, quantity) => {
-    setSelectedProduct(product);
-    setCount(quantity);
-    setIsPaymentOpen(true);
+    setSelectedProduct(product); // Set the selected product
+    setCount(quantity);          // Set the quantity
+    setIsPaymentOpen(true);      // Open the payment popup
   };
 
   return (
     <div>
       <ProductDetail 
         data={data} 
-        productType="bags" 
+        productType="Cap" 
         onBuyClick={handleBuyClick} 
       />
       <PaymentPopup
@@ -29,10 +29,10 @@ const BagDetail = () => {
         quantity={count}
       />
       <div className="hidden lg:inline-block md:max-w-4xl p-6">
-        <CardsRow1 data={data} productType="bags" /> {/* Updated */}
+        <CardsRow1 data={data} productType="caps" /> {/* Add productType prop */}
       </div>
     </div>
   );
 };
 
-export default BagDetail;
+export default CapDetail;

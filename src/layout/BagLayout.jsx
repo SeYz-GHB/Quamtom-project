@@ -3,7 +3,7 @@ import {Outlet} from 'react-router-dom'
 const BagLayout = () => {
   return (
     <div>
-      bagLayout page
+     
       <Outlet />
     </div>
   )

@@ -7,20 +7,20 @@ import TshirtLayout from './layout/TshirtLayout'
 import PantLayout from './layout/PantLayout'
 import BagLayout from './layout/BagLayout'
 import CapLayout from "./layout/CapLayout";
-
+import Caps from "./pages/Caps/Caps";
 import Hoodies from "./pages/Hoodies/Hoodies";
 import HoodyDetail from "./pages/Hoodies/HoodyDetail";
-import Tshirt from "./pages/T-ShirtPage/Tshirt";
+import Tshirts from "./pages/T-ShirtPage/Tshirt";
 import TshriteDetail from "./pages/T-ShirtPage/TshirtDetail";
-import Pant from "./pages/Pants/Pant";
+import Pants from "./pages/Pants/Pant";
 import PantDetail from "./pages/Pants/PantDetail";
-import Bag from "./pages/Bags/Bag";
+import Bags from "./pages/Bags/Bag";
 import BagDetail from "./pages/Bags/BagDetail";
-import Cap from "./pages/Cap/Cap";
-import CapDetail from "./pages/Cap/CapDetail";
+
 import Footer from "./components/Footer";
 
 import NotFound from "./pages/NotFoundPage";
+import CapDetail from "./pages/Caps/CapDetail";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
@@ -32,25 +32,26 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="tshirts" element={<TshirtLayout/>}>
-        <Route index element={<Tshirt/>}/>
+        <Route index element={<Tshirts/>}/>
         <Route path=":id" element={<TshriteDetail/>}/>
       </Route>
 
       <Route path="pants" element={<PantLayout/>}>
-        <Route index element={<Pant/>}/>
+        <Route index element={<Pants/>}/>
         <Route path=":id" element={<PantDetail/>}/>
       </Route>
      
       <Route path="bags" element={<BagLayout/>}>
-        <Route index element={<Bag/>}/>
+        <Route index element={<Bags/>}/>
         <Route path=":id" element={<BagDetail/>}/>
+      </Route>
+      <Route path="caps" element={<CapLayout/>}>
+        <Route index element={<Caps/>}/>
+        <Route path=":id" element={<CapDetail/>}/>
       </Route>
       
 
-      <Route path="caps" element={<CapLayout/>}>
-        <Route index element={<Cap/>}/>
-        <Route path=":id" element={<CapDetail/>}/>
-      </Route>
+     
       
       <Route path="login" element={<Login />} />
       <Route path="*" element={<NotFound/>} ></Route>

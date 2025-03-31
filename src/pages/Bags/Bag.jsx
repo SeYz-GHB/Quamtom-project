@@ -2,19 +2,19 @@ import React from 'react'
 import { data } from '../../data/BagsData'
 import Cards from '../../components/CardsSection/Cards'
 
-import AutoCarousel from '../../components/HoodiesComponent/AutoCarouselHoodies'
+
 import RunningText from '../../components/RunningText'
 import PremiumsHoodies from '../../components/HoodiesComponent/PremiumsHoodies'
 
-const Bag = () => {
+const Bags = () => {
   return (<div>
     
     <div className='bg-gray-100 w-full flex flex-col items-center ' >
-      <AutoCarousel />
+      
       <RunningText />
       <div className='w-full flex flex-col items-center'>
 
-        <Cards data={data}/>
+        <Cards data={data} basePath="bags"  />
       <PremiumsHoodies />
       </div>
       
@@ -24,5 +24,5 @@ const Bag = () => {
   )
 }
 
-export default Bag;
+export default Bags;
         

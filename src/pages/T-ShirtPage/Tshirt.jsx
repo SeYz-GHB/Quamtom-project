@@ -1,23 +1,21 @@
 import React from 'react'
-import { data } from '../../data/HoodiesData'
+import { data } from '../../data/TshirtsData'
 import Cards from '../../components/CardsSection/Cards'
 
-import AutoCarousel from '../../components/HoodiesComponent/AutoCarouselHoodies'
+
 import RunningText from '../../components/RunningText'
 import PremiumsHoodies from '../../components/HoodiesComponent/PremiumsHoodies'
-PremiumsHoodies
 
-const Tshirt = () => {
+const Tshirts = () => {
   return (<div>
     
     <div className='bg-gray-100 w-full flex flex-col items-center ' >
-      {/* <AutoCarousel />
-      <RunningText /> */}
+      
+      <RunningText />
       <div className='w-full flex flex-col items-center'>
-        TshirtPage
 
-       {/*  <Cards data={data}/>
-      <PremiumsHoodies /> */}
+        <Cards data={data} basePath="Tshirts"  />
+      <PremiumsHoodies />
       </div>
       
     </div>
@@ -26,5 +24,5 @@ const Tshirt = () => {
   )
 }
 
-export default Tshirt;
+export default Tshirts;
         
