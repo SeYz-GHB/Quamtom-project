@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({id, name,materials,img}) => {
   return (
     <div className="  w-full flex flex-row md:flex-col items-center justify-center h-full ">
-        <img src={img} alt="" className='w-[60%] h-[70%] md:w-[80%] md:h-[60%] '/>
+        <img src={img} alt="" className='w-[50%] h-[70%] md:w-[80%] md:h-[60%] '/>
         <div className='flex flex-col items-center'>
         <p className="font-bold line-clamp-2">{name}</p>
 

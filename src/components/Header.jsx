@@ -16,14 +16,11 @@ const Header = () => {
       title: "TRENDING SEARCHES",
       items: ["Hoodies", "T-shirts", "Bags"], // Added T-shirts
     },
+    
     {
-      title: "NEW IN",
-      items: ["Women", "Men"],
-    },
-    {
-      title: "FIND THE PERFECT GIFT",
-      items: ["Quantom Gift", "Personalization", "Store Locator"],
-    },
+      title: 'PARTNER-SHIP && ABOUT-US',
+      items: ['Partnership', 'About-Us']
+    }
   ];
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -49,7 +46,12 @@ const Header = () => {
         case 'bags':
           navigate('/bags'); // Note: using "tshirts" without hyphen for path consistency
           break;
-      // Add more cases for other items if needed
+        case 'partnership':
+          navigate('/partnership');
+          break;
+        case 'about-us':
+          navigate('/about-us');
+          break; 
       default:
         // For items without specific routes, do nothing or add default navigation
         break;
